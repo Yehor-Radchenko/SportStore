@@ -15,8 +15,7 @@ export class Repository {
   filter: Filter = new Filter();
 
   constructor(private http: HttpClient) {
-    //this.filter.category = "soccer";
-    this.filter.related = true;
+    this.filter.related = false;
     this.getProducts();
   }
 
